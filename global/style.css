@@ -349,7 +349,8 @@
 }
 .rvxp_product_reviews_show_in_card_header_section{
     display: flex;
-    max-width: 321px;
+    width: 100%;
+    align-items: center;
     gap: 12px;
 }
 .rvxp_product_reviews_header_section_id_logo{
@@ -361,6 +362,8 @@
     justify-content: center;
     align-items: center;
 }
+.rvxp_product_reviews_header_section_id_logo span{
+}
 .rvxp_product_reviews_header_section_id_logo span a{
     text-decoration: none;
     font-size: 22.18px;
@@ -369,11 +372,16 @@
     letter-spacing: 1%;
     color: #ffffff;
 }
+.rvxp_product_reviews_show_in_card_header_section_star_id_logo_and_name{
+    width: 100%;
+}
 .rvxp_product_reviews_header_section_star_and_reviews_published_date{
-    display: flex;
     align-items: center;
     padding: 1.5px 0;
     margin-bottom: 4px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
  .rvxp_product_reviews_header_section_star_rating{
     
@@ -381,7 +389,7 @@
 .rvxp_product_reviews_header_section_star_rating img{
     width: 16px;
     height: 15px;
-    margin: px;
+    margin: 1px;
 }
 .rvxp_product_reviews_show_in_card_header_section_reviews_published_date{
     display: flex;
@@ -624,6 +632,34 @@
     
 }
 @media screen and (max-width:600px){
+    /* progress_bar_section_is_start */
+    .rvxp_reviews_container_left_star_img {
+        width: 40px;
+        height: 40px;
+    }
+    .rvxp_total_reviews_container {
+        gap: 10px;
+    }
+    .rvxp_total_reviews .rvxp_digit_star_rating {
+        font-size: 25px;
+        margin-right: 2px;
+    }
+    .rvxp_customer_total_reviews_in_left {
+        margin-right: 15px;
+    }
+    .rvxp_customer_reviews_container {
+        padding: 22px 5px 22px 5px;
+    }
+    .rvxp_reviews_progress_bar_middle_bar {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .rvxp_reviews_progress_bar_left_in_right_eliment {
+        margin-right: 5px;
+    }
+
+    /* progress_bar_section_is_end */
+   
 
     /* customer_reviews_card_section_is_start */
     
@@ -638,6 +674,35 @@
    /* customer_reviews_card_section_is_end */
 }
 @media screen and (max-width:425px){
+    /* progress_bar_section_is_start */
+    .rvxp_customer_reviews_heading {
+        font-size: 16px;
+    }
+    .rvxp_reviews_container_left_star_img {
+        width: 30px;
+        height: 30px;
+    }
+    .rvxp_reviews_container_left_star_img img {
+        width: 25px;
+        height: 25px;
+    }
+    .rvxp_total_reviews .rvxp_digit_star_rating {
+        font-size: 19px;
+        margin-right: 0px;
+    }
+    .rvxp_reviews-total-collected p, .rvxp_reviews-total-collected span {
+        font-size: 12px;
+    }
+    .rvxp_customer_total_reviews_in_left {
+        margin-right: 15px;
+    }
+
+    /* progress_bar_section_is_end */
+    
+
+
+
+
     .rvxp_customer_reviews_container {
         padding: 32px 5px 32px 5px;
     }
