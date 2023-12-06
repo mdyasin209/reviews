@@ -638,7 +638,9 @@
         height: 40px;
     }
     .rvxp_total_reviews_container {
-        gap: 10px;
+        display: flex;
+        gap: 16px;
+        justify-content: center;
     }
     .rvxp_total_reviews .rvxp_digit_star_rating {
         font-size: 25px;
@@ -673,30 +675,123 @@
     }
    /* customer_reviews_card_section_is_end */
 }
-@media screen and (max-width:425px){
+@media screen and (max-width:500px){
+    .rvxp_container {
+        padding-top: 50px;
+    }
     /* progress_bar_section_is_start */
+    .rvxp_customer_reviews_section {
+        display: grid;
+        grid-template-columns: 35px 1fr auto 49px;
+        grid-template-rows:auto 22px 22px 22px 22px 22px;
+        grid-gap: 0px;
+        align-items: center;
+        grid-row-gap:12px;
+        grid-template-areas:
+        "c-1 c-1 c-1 c-1" 
+        "c-2 c-3 c-4 c-5"
+        "c-6 c-7 c-8 c-9"
+        "c-10 c-11 c-12 c-13"
+        "c-14 c-15 c-16 c-17"
+        "c-18 c-19 c-20 c-21"
+        ;
+      }
+      .clm_1{
+        grid-area: c-1;
+      }
+      .clm_2{
+        grid-area: c-2; 
+      }
+      .clm_3{
+        grid-area: c-3;
+      }
+      .clm_4{
+        grid-area: c-4;
+      }
+      .clm_5{
+        grid-area: c-5;
+      }
+      .clm_6{
+        grid-area: c-6;
+      }
+      .clm_7{
+        grid-area: c-7;
+      }
+      .clm_8{
+        grid-area: c-8;
+      }
+      .clm_9{
+        grid-area: c-9;
+      }
+
+      .clm_10{
+        grid-area: c-10;
+      }
+      .clm_11{
+        grid-area: c-11;
+      }
+      .clm_12{
+        grid-area: c-12;
+      }
+      .clm_13{
+        grid-area: c-13;
+      }
+      .clm_14{
+        grid-area: c-14;
+      }
+      .clm_15{
+        grid-area: c-15;
+      }
+      .clm_16{
+        grid-area: c-16;
+      }
+      .clm_17{
+        grid-area: c-17;
+      }
+      .clm_18{
+        grid-area: c-18;
+      }
+      .clm_19{
+        grid-area: c-19;
+      }
+      .clm_20{
+        grid-area: c-20;
+      }
+      .clm_21{
+        grid-area: c-21;
+      }
+      .item1 {
+        width: 100%;
+      }
+      .rvxp_customer_total_reviews_in_left{
+        height: fit-content;
+        
+      }
+
     .rvxp_customer_reviews_heading {
-        font-size: 16px;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 10px;  
     }
     .rvxp_reviews_container_left_star_img {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
     .rvxp_reviews_container_left_star_img img {
-        width: 25px;
-        height: 25px;
+        width: 35px;
+        height: 35px;
     }
+
     .rvxp_total_reviews .rvxp_digit_star_rating {
         font-size: 19px;
         margin-right: 0px;
+        line-height: 22px;
+
     }
     .rvxp_reviews-total-collected p, .rvxp_reviews-total-collected span {
         font-size: 12px;
     }
-    .rvxp_customer_total_reviews_in_left {
-        margin-right: 15px;
-    }
-
+    
     /* progress_bar_section_is_end */
     
 
@@ -704,10 +799,10 @@
 
 
     .rvxp_customer_reviews_container {
-        padding: 32px 5px 32px 5px;
+        padding: 10px;
     }
     .rvxp_customer_total_reviews_in_left {
-        margin-right: 20px;
+        margin-right: 0px;
     }
 
     /* customer_reviews_card_section_is_start */
