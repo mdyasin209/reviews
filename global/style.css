@@ -12,6 +12,7 @@
     width: 100%;
     background-color: #ffffff;
     padding-top: 158px;
+    padding-bottom: 100px;
 }
 .rvxp_child_container{
     max-width: 1140px;
@@ -520,7 +521,7 @@
     align-items: center;
     gap: 12px;
     font-size: 14px;
-
+    cursor: pointer;
 }
 .rvxp_product_reviews_like_icon{
     display: flex;
@@ -568,14 +569,7 @@
 }
 .rvxp_product_reviews_product_img div img{
     opacity: 90%;
-
 }
-
-
-
-
-
-
 /* customer_reviews_published_section_is_end */
 
 /* resposive_is_start */
@@ -680,7 +674,7 @@
         padding-top: 50px;
     }
     /* progress_bar_section_is_start */
-    .rvxp_customer_reviews_section {
+    /* .rvxp_customer_reviews_section {
         display: grid;
         grid-template-columns: 35px 1fr auto 49px;
         grid-template-rows:auto 22px 22px 22px 22px 22px;
@@ -762,7 +756,7 @@
       }
       .item1 {
         width: 100%;
-      }
+      } */
       .rvxp_customer_total_reviews_in_left{
         height: fit-content;
         
@@ -818,3 +812,182 @@
 
 
 /* resposive_is_end*/
+
+
+
+
+
+
+
+/* progress_bar_grid_start */
+
+.rvxp_single_progress_bar{
+    max-width: 818px;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 35px 1fr auto 49px;
+    grid-template-rows:repeat(5, 22px);
+    row-gap: 12px;
+    background-color: yellow;
+}
+
+.rvxp_reviews_progress_bar_left_eliment{
+    display: flex; 
+    align-items: center;
+    width: 35px;
+    height: 22px;
+    gap: 8px;
+    margin-right: 16px;
+   
+}
+.rvxp_reviews_progress_bar_left_eliment span{
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.12px;
+    font-family: var(--font-family-Manrope);
+    color: #202020;
+    width: 9px;
+}
+.rvxp_reviews_progress_bar_left_eliment img{
+    width: 18px;
+    height: 16.88px;
+    margin: 2.56px 0;
+}
+ /* progress-bar-five-start */
+.rvxp_reviews_progress_bar_five::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background-color: #202020;
+    width: 0%;
+    height: 6px;
+    border-radius: 2px;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+.rvxp_five_star::before{
+    animation-name: rvxp_five;
+}
+@keyframes rvxp_five{
+    to{
+        width: 50%;
+    }
+}
+
+/* progress-bar-five-end */
+
+/* progress-bar-four-start */
+.rvxp_reviews_progress_bar_four::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background-color: #202020;
+    width: 0%;
+    height: 6px;
+    border-radius: 2px;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+.rvxp_four_star::before{
+    animation-name: rvxp_four;
+}
+@keyframes rvxp_four{
+    to{
+        width: 20%;
+    }
+}
+
+/* progress-bar-four-end */
+
+/* progress-bar-three-start */
+.rvxp_reviews_progress_bar_three::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background-color: #202020;
+    width: 0%;
+    height: 6px;
+    border-radius: 2px;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+.rvxp_three_star::before{
+    animation-name: rvxp_three;
+}
+@keyframes rvxp_three{
+    to{
+        width: 10%;
+    }
+}
+
+/* progress-bar-three-end */
+
+
+/* progress-bar-two-start */
+.rvxp_reviews_progress_bar_two::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background-color: #202020;
+    width: 0%;
+    height: 6px;
+    border-radius: 2px;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+.rvxp_two_star::before{
+    animation-name: rvxp_two;
+}
+@keyframes rvxp_two{
+    to{
+        width: 5%;
+    }
+}
+
+/* progress-bar-two-end */
+
+
+/* progress-bar-one-start */
+.rvxp_reviews_progress_bar_one::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background-color: #202020;
+    width: 0%;
+    height: 6px;
+    border-radius: 2px;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+.rvxp_one_star::before{
+    animation-name: rvxp_one;
+}
+@keyframes rvxp_one{
+    to{
+        width: 3%;
+    }
+}
+
+/* progress-bar-one-end */
+
+
+
+/* progress_bar_grid_end*/
+
