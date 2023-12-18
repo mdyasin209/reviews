@@ -307,6 +307,9 @@
     cursor: pointer;
 }
 .rvxp_write_a_review_comment_button_in_right{
+    position: relative;
+}
+.rvxp_reviews_tunning_icon{
     width: 48px;
     height: 40px;
     border-radius: 4px;
@@ -316,10 +319,93 @@
     align-items: center;
     cursor: pointer;
 }
+.rvxp_reviews_tunning_icon:hover{
+    background-color:#F6F6F7;
+}
 .rvxp_write_a_review_comment_button_in_right img{
     width: 24px;
     height: 24px;
     border-radius: 5px;
+}
+.rvxp_reviews_mobal{
+    min-width: 205px;
+    position: absolute;
+    right: 0px;
+    top: calc(100% + 8px);
+    background-color: #ffffff;
+    padding: 8px;
+    box-shadow: 0 2px 12px 0px #999a9b;
+    border-radius: 6px;
+    z-index: 20;
+    display: none;
+}
+.close{
+    /* display: flex; */
+}
+.modal_close_btn{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.modal_close_btn span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 30px;
+    background-color:#ffffff;
+    color: #aaaaaa;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+.modal_close_btn span:hover{
+    color: #000;
+    
+
+}
+.rvxp_reviews_mobal .rvxp_modal_heading{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--font-family-MavenPro);
+    line-height: 22px;
+    letter-spacing: -1%;
+    color: #6f6f6f;
+    list-style: none;
+    padding: 6px 8px;
+
+}
+.rvxp_modal_list_item li{
+    list-style: none;
+    padding: 6px 8px;
+    cursor: pointer;
+
+}
+.rvxp_reviews_mobal ul li:hover{
+    background-color:#F6F6F7;
+    border-radius: 4px;
+}
+/* .rvxp_reviews_mobal ul:first-child{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--font-family-MavenPro);
+    line-height: 22px;
+    letter-spacing: -1%;
+    color: #6f6f6f;
+    cursor:default;
+    
+} */
+.rvxp_reviews_mobal ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 0.5%;
+    color: #464646;
+    font-family: var(--font-family-Manrope);
+
+
 }
 /* write_a_review_section_is_end */
 
