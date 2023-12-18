@@ -52,9 +52,6 @@
                                 <span>5</span>
                             </div>
                         </div>
-                            <!-- <div class="rvxp_reviews_progress_bar_right_eliment clm_5">
-                                <span>(100%)</span>
-                            </div> -->
 
                             <div class="rvxp_reviews_progress_bar_left_eliment clm_6">
                                 <span>4</span>
@@ -67,12 +64,7 @@
                             <div class="rvxp_reviews_progress_bar_left_in_right_eliment">
                                 <span>4</span>
                             </div>
-                        </div>
-                       
-                            <!-- <div class="rvxp_reviews_progress_bar_right_eliment clm_9">
-                                <span>(0%)</span>
-                            </div> -->
-                        
+                        </div>                
                             <div class="rvxp_reviews_progress_bar_left_eliment clm_10">
                                 <span>3</span>
                                 <img src="public/images/star.svg" alt="">
@@ -83,11 +75,6 @@
                             <div class="rvxp_reviews_progress_bar_left_in_right_eliment clm_12">
                                 <span>3</span>
                             </div>
-                        
-                            <!-- <div class="rvxp_reviews_progress_bar_right_eliment clm_13">
-                                <span>(0%)</span>
-                            </div> -->
-                        
                             <div class="rvxp_reviews_progress_bar_left_eliment clm_14">
                                 <span>2</span>
                                 <img src="public/images/star.svg" alt="">
@@ -98,11 +85,6 @@
                             <div class="rvxp_reviews_progress_bar_left_in_right_eliment clm_16">
                                 <span>2</span>
                             </div>
-                        
-                            <!-- <div class="rvxp_reviews_progress_bar_right_eliment clm_17">
-                                <span>(0%)</span>
-                            </div> -->
-                        
                             <div class="rvxp_reviews_progress_bar_left_eliment clm_18">
                                 <span>1</span>
                                 <img src="public/images/star.svg" alt="">
@@ -113,10 +95,6 @@
                             <div class="rvxp_reviews_progress_bar_left_in_right_eliment clm_20">
                                 <span>1</span>
                             </div>
-                       
-                            <!-- <div class="rvxp_reviews_progress_bar_right_eliment clm_21">
-                                <span>(0%)</span>
-                            </div> -->
                 </div>
                 <!-- grid_progress_bar_end -->
             </div>
@@ -131,7 +109,66 @@
                     </div>
                     <div class="rvxp_write_a_review_button_in_right">
                         <div class="rvxp_two_btn_parent">
-                            <span>Write A Review</span>
+                            <span class="span" id="submitBtn">Write A Review</span>
+
+                            <div class="rvxp_write_review_modal_container" id="myReviewModal">
+                                <span class="close_review_modal">X</span>
+                                <div class="rvxp_write_review_modal_child">
+                                    <h4>Write A review</h4>
+                                    <div class="rvxp_modal_review_generate_bottom_section">
+                                        <div class="rvxp_modal_review_generate_bottom_section_top_star_icon">
+                                            <img src="public/images/Group.svg" alt="">
+                                            <img src="public/images/Group.svg" alt="">
+                                            <img src="public/images/Group.svg" alt="">
+                                            <img src="public/images/Group.svg" alt="">
+                                            <img src="public/images/Vector (1).svg" alt="">
+                                        </div>
+                                        <div class="rvxp_modal_review_generate_bottom_section_top_review_title">
+                                            <h3 class="review_title">Review Title</h3>
+                                            <input class="review_type_recommended" type="text" placeholder="Recommended!">
+                                        </div>
+                                        <div class="rvxp_modal_review_generate_bottom_section_top_review_feedback">
+                                            <h3 class="review_title">Review Title</h3>
+                                            <textarea class="rvxp_review_text-area" name="subject" placeholder="Share your feedback"></textarea>
+
+                                        </div>
+                                        <div class="rvxp_review_generate_name_and_email_container">
+                                            <div class="rvxp_review_generate_name_and_email_title">
+                                                <h3>Name *</h3>
+                                                <h3>Email *</h3>
+                                            </div>
+                                            <div class="rvxp_review_generate_name_and_email_adress_input">
+                                                <input class="review_type_recommended" type="name" placeholder="Full Name">
+                                                <input class="review_type_recommended" type="email" placeholder="Email address">
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="rvxp_review_generate_modal_file-upload_seciton">
+                                            <img src="public/images/upload_arrow.svg" alt="">
+                                            <span>Upload Photo/Video 0/5</span>
+                                        </div>
+                                        <div class="rvxp_review_generate_modal_review_submit_section">
+                                            <div class="rvxp_review_modal_check_btn_parent">
+                                                <input type="checkbox">
+                                                <span>Mark as anonymous</span>
+                                            </div>
+                                            <div class="rvxp_review_generate_modal_review_submit_section">
+                                                <button>Submit</button>
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
                         </div>
                         <div class="rvxp_write_a_review_comment_button_in_right">
                             <div id="myBtn" class="rvxp_reviews_tunning_icon">
