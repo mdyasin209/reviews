@@ -31,7 +31,7 @@
 }
 .rvxp_customer_reviews_section {
     display: grid;
-    grid-template-columns: auto 35px 1fr auto 49px;
+    grid-template-columns: auto 35px 1fr auto;
     grid-template-rows:repeat(5, 22px);
     grid-gap: 0px;
     align-items: center;
@@ -258,7 +258,7 @@
 .rvxp_reviews_progress_bar_left_in_right_eliment{
     margin-right: 16px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .rvxp_reviews_progress_bar_right_eliment{
     display: flex;
