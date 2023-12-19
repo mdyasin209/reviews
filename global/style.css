@@ -381,6 +381,7 @@
 .rvxp_review_text-area{
     max-width: 502px;
     width: 100%;
+    min-width: 200px;
     min-height: 100px;
     border-radius: 4px;
     border: 1px solid #131313;
@@ -497,6 +498,8 @@
     font-size: 20px;
     font-weight: 600;
     color:#5C5F62;
+    height: 20px;
+    width: 20px;
 
 }
 .close_review_modal:hover{
@@ -1073,6 +1076,12 @@
     .rvxp_product_reviews_show_in_review_page_container{
         width: 100%;
         columns: 1;
+    }
+
+
+    .rvxp_write_review_modal_container{
+        max-width: 300px;
+        padding: 15px;
     }
 
      /* customer_reviews_card_section_is_end */
