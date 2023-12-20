@@ -366,6 +366,14 @@
     font-size: 16px;
     font-weight: 500;
 }
+.review_type_recommended:hover{
+    border: 1px solid #131313;
+
+}
+.review_type_recommended:active{
+    border: 1px solid #131313;
+
+}
 .review_type_recommended::placeholder{
     color:#757575;
     font-size: 14px;
@@ -384,7 +392,8 @@
     min-width: 200px;
     min-height: 100px;
     border-radius: 4px;
-    border: 1px solid #131313;
+    /* border: 1px solid #131313; */
+    border: 1px solid #D6D6D6;
     font-size: 16px;
     font-weight: 500;
     outline: none;
@@ -392,11 +401,20 @@
     margin-top: 12px;
 
 }
-.rvxp_review_text-area::placeholder{
-    font-size: 14px;
+.rvxp_review_text-area:hover{
+    border: 1px solid #131313;
 
 }
-.rvxp_review_generate_name_and_email_title{
+.rvxp_review_text-area:active{
+    border: 1px solid #131313;
+
+}
+.rvxp_review_text-area::placeholder{
+    font-size: 14px;
+   
+
+}
+/* .rvxp_review_generate_name_and_email_title{
     display: flex;
     gap: 20px;
 
@@ -409,7 +427,24 @@
     letter-spacing: 0.5%;
     color: #202020;
 
+} */
+.rvxp_review_generate_name_and_email_container{
+    display: flex;
+    gap: 16px;
+    
 }
+.rvxp_review_generate_label_name_input label{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.5%;
+    color: #202020;
+
+}
+
+
+
+
 .rvxp_review_generate_name_and_email_adress_input{
     display: flex;
     width: 100%;
@@ -506,6 +541,7 @@
     color:#202020;
 
 }
+
 
 
 
@@ -1082,6 +1118,10 @@
     .rvxp_write_review_modal_container{
         max-width: 290px;
         padding: 15px;
+    }.rvxp_review_generate_name_and_email_container{
+        flex-direction: column;
+        gap: 0px;
+        
     }
 
      /* customer_reviews_card_section_is_end */
