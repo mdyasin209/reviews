@@ -15,16 +15,24 @@
     max-width: 1140px;
     width: 100%;
     background-color: #ffffff;
+    margin: 100px auto;
+    
+    
+}
+.rvxp_customer_reviews_section_progress_bar_child{
+    max-width: 1140px;
+    width: 100%;
     padding: 32px 32px 32px 32px;
     box-shadow: 0px 2px 17px 0px #18274B1A;
     border-radius: 10px;
-    margin: 100px auto;
     display: flex;
     gap: 46px;
+
 }
 
 /* total_reviews_section_start */
 .rvxp_customer_total_reviews_in_left{
+    text-align: center;
     max-width: 212px;
     width: 100%;
 }
@@ -216,14 +224,16 @@
 
 }
 @media screen and (max-width:600px) {
-    .rvxp_customer_reviews_section_progress_bar_container{
+    .rvxp_customer_reviews_section_progress_bar_child{
         gap: 26px;
     }
     
 }
 @media screen and (max-width:500px) {
-    .rvxp_customer_reviews_section_progress_bar_container{
+    .rvxp_customer_reviews_section_progress_bar_child{
         flex-direction: column;
+        padding: 10px 10px 10px 10px;
+        margin: 0 10px;
     }
     .rvxp_customer_total_reviews_in_left{
         max-width: 100%;
@@ -236,6 +246,7 @@
         justify-content: center;
         align-items: center;
         margin-top: 0px;
+        
     }
     
 }
